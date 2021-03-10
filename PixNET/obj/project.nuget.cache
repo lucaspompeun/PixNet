@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "OueI9tjnpIIXXzAhbp8TyhJ6P+bjpeyVnMLcefnwmmw1fdf3UdIlritZk+88q15DbBExNfaH8JZTzMGi4bW0cw==",
+  "dgSpecHash": "k1zCx0LHO0i56iHE344rT4o/FmNQYgjwwVNpt8L64VXl3BHhEXk35wCuoVQgh4oRliUQZuB6N/vRaG6TRs5XhA==",
   "success": true,
   "projectFilePath": "C:\\Users\\lucas\\OneDrive\\Documentos\\GitHub\\PixNet\\PixNet\\PixNet.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lucas\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\lucas\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],
   "logs": []
 }
