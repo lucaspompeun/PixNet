@@ -61,8 +61,10 @@ namespace PixNet
 
             payload += $"{IdCrc16}04";
 
+            payload += Crc16.CalculateCrc(payload);
 
-            return "";
+
+            return payload;
         }
 
     }
