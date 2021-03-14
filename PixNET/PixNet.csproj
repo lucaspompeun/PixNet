@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>0.1.1</Version>
+    <Version>0.1.2</Version>
     <Authors>Lucas Pompeu Neves</Authors>
     <Company>Egua Tech</Company>
     <Description>PixNet - Biblioteca de classes .NET Standard para geração do Payload de transações estáticas Pix em texto ou QRCode</Description>

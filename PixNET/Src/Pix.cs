@@ -1,13 +1,13 @@
-﻿using PixNet.src;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
+using PixNet.Src;
 
-namespace PixNet.src
+namespace PixNet
 {
-    public static class PixNet
+    public static class Pix
     {
         public static string Payload(string json)
         {
@@ -40,28 +40,31 @@ namespace PixNet.src
             double amount = data["Amount"].Value<double>();
 
             // Payload
+            Merchant merchant = new Merchant();
+            Crc16 crc16 = new Crc16();
+
             string payload;
-            payload = Merchant.GetValue(IdPayloadFormatIndicator, "01");
+            payload = merchant.GetValue(IdPayloadFormatIndicator, "01");
 
-            payload += Merchant.GetMerchantAccountInformation(IdMerchantAccountInformationGui, IdMerchantAccountInformationKey, pixKey, IdMerchantAccountInformationDescription, description, IdMerchantAccountInformation);
+            payload += merchant.GetMerchantAccountInformation(IdMerchantAccountInformationGui, IdMerchantAccountInformationKey, pixKey, IdMerchantAccountInformationDescription, description, IdMerchantAccountInformation);
 
-            payload += Merchant.GetValue(IdMerchantCategoryCode, "0000");
+            payload += merchant.GetValue(IdMerchantCategoryCode, "0000");
 
-            payload += Merchant.GetValue(IdTransactionCurrency, "986");
+            payload += merchant.GetValue(IdTransactionCurrency, "986");
 
-            payload += Merchant.GetValue(IdTransactionAmount, String.Format("{0:0.00}", amount));
+            payload += merchant.GetValue(IdTransactionAmount, String.Format("{0:0.00}", amount));
 
-            payload += Merchant.GetValue(IdCountryCode, "BR");
+            payload += merchant.GetValue(IdCountryCode, "BR");
 
-            payload += Merchant.GetValue(IdMerchantName, merchantName);
+            payload += merchant.GetValue(IdMerchantName, merchantName);
 
-            payload += Merchant.GetValue(IdMerchantCity, merchantCity);
+            payload += merchant.GetValue(IdMerchantCity, merchantCity);
 
-            payload += Merchant.GetAdditionalDataFieldTemplate(IdAdditionalDataFieldTemplateTxid, txId, IdAdditionalDataFieldTemplate);
+            payload += merchant.GetAdditionalDataFieldTemplate(IdAdditionalDataFieldTemplateTxid, txId, IdAdditionalDataFieldTemplate);
 
             payload += $"{IdCrc16}04";
 
-            payload += Crc16.CalculateCrc(payload);
+            payload += crc16.CalculateCrc(payload);
 
 
             return payload;

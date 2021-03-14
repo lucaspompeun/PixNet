@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PixNet.src
+namespace PixNet.Src
 {
     public class Merchant
     {
-        public static string GetValue(string id, string valor)
+        public string GetValue(string id, string valor)
         {
             int size = valor.Length;
             string sizeFormated = Convert.ToString(size);
@@ -19,7 +19,7 @@ namespace PixNet.src
             return $"{id}{sizeFormated}{valor}";
         }
 
-        public static string GetMerchantAccountInformation(string idGui, string idKey, string pixKey, string idDescription, string descriptionValue, string iDMerchantInfo)
+        public string GetMerchantAccountInformation(string idGui, string idKey, string pixKey, string idDescription, string descriptionValue, string iDMerchantInfo)
         {
             string gui = GetValue(idGui, "br.gov.bcb.pix");
 
@@ -34,7 +34,7 @@ namespace PixNet.src
             return GetValue(iDMerchantInfo, $"{gui}{key}{description}");
         }
 
-        public static string GetAdditionalDataFieldTemplate(string idTx, string txIdValue, string idTemplate)
+        public string GetAdditionalDataFieldTemplate(string idTx, string txIdValue, string idTemplate)
         {
             string txId = GetValue(idTx, txIdValue);
 

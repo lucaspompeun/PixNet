@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace PixNet.src
+namespace PixNet.Src
 {
     public class Crc16
     {
-        public static string CalculateCrc(string str)
+        public string CalculateCrc(string str)
         {
             Encoding enc = Encoding.UTF8;
 
@@ -31,7 +31,7 @@ namespace PixNet.src
             return hex;
         }
 
-        private static string NumToHex(int n)
+        private string NumToHex(int n)
         {
             return n.ToString("X4").ToUpper();
         }
