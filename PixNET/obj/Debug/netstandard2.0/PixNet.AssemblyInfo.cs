@@ -13,11 +13,14 @@ using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("Egua Tech")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("0.1.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.1.0")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("PixNet - Biblioteca de classes .NET Standard para geração do Payload de transaçõe" +
+    "s estáticas Pix em texto ou QRCode")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("0.1.1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("0.1.1")]
 [assembly: System.Reflection.AssemblyProductAttribute("PixNet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PixNet")]
-[assembly: System.Reflection.AssemblyVersionAttribute("0.1.0.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("0.1.1.0")]
+[assembly: System.Reflection.AssemblyMetadataAttribute("RepositoryUrl", "https://github.com/lucaspompeun/PixNet")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.
 

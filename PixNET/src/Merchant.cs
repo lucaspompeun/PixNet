@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PixNet.src
 {
-    public static class Merchant
+    public class Merchant
     {
         public static string GetValue(string id, string valor)
         {

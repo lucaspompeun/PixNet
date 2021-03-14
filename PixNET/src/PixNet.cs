@@ -5,7 +5,7 @@ using System.Text;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-namespace PixNet
+namespace PixNet.src
 {
     public static class PixNet
     {

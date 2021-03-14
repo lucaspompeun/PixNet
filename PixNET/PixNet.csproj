@@ -2,13 +2,25 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
     <Authors>Lucas Pompeu Neves</Authors>
     <Company>Egua Tech</Company>
+    <Description>PixNet - Biblioteca de classes .NET Standard para geração do Payload de transações estáticas Pix em texto ou QRCode</Description>
+    <PackageProjectUrl>https://github.com/lucaspompeun/PixNet</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/lucaspompeun/PixNet</RepositoryUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PixNet.src
 {
-    public static class Crc16
+    public class Crc16
     {
         public static string CalculateCrc(string str)
         {
