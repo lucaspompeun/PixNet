@@ -43,7 +43,7 @@ Ao final você terá um código semelhante ao exemplo abaixo
 using System;
 using PixNet;
 
-namespace Teste
+namespace TestePixNet
 {
     class Program
     {
